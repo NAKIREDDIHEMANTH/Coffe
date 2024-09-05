@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE SHOP</title>
+    <style>
+           body{
+    background-image: url(static/img/bg.png);
+}
+#title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 60px;
+    color: rgb(174, 181, 187);
+    text-align: center;
+}
+.flex1{
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    
+}
+.flex2{
+    border: 2px solid gray;
+    background-color: rgb(230, 229, 224);
+    
+    
+    font-size: 7px;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+.img1{
+    width: 120px;
+    height: 100px;
+    border-radius: 90px;
+    margin-left:120px ;
+}
+.flex3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 110px;
+    
+}
+#name{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    text-align: center;
+    color: rgb(92, 105, 116);
+}
+.content{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(55, 50, 50);
+
+}
+
+.flex5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.topic{
+    color: white;
+    list-style-type: none;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.flex5{
+    
+}
+    </style>
+</head>
+<body>
+    <a href="{% url 'home' %}"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWxJREFUSEvt1t1NwzAQB/A7OewRBiCIDdJ3bNQJaCehTFKYoCLpe7tBRRiADhLpkJU4OI7z4aMoL81jm/Z3ts9/G2GmB2dygQ3vTrtYCJGqRL1ximfBWbHfAtBKg0Tw+nQvN6F4MGyjBuPgQXAbxXMFU8wZ+WTYRRFpXZblWYibAwefBPtQeSePeqRVk4Xjo/AQataYgw/CU1Au3guHoBzcC3PQULwD/wUNwVuwGw6cYDD4x2e+QYSXvpBp4KzIVgC4taPvknAdNmuT7Q2cf+UpERz+E0aEhdn/ranW+zGKotgU4I64npVn/4FA7/ZJZU+1BnXKLR+WdcyC/1jMipzc/PUthVuAXagNq0R2mrhnO/ng/XeVyfpwoKbyCsfYfKeSx1v9yQXhbjG+Djaju8JuPwSs8XWqfyfP10jc5tIJlobeHHveP6pELiaucTe3uUXYMWn/R+9FwFzYiXQ48J6h+/bonYtHjv9qNvgHyR2LLlJhOJMAAAAASUVORK5CYII="/ id="home"></a>
+
+    <div>
+        <h1 id="title">OUR CUSTOMER'S</h1>
+        <div class="flex1">
+            <div class="flex2">
+                 <h1>
+                    <div class="flex3">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAedJREFUSEvFluF1wiAUhXmJezRuYgbQOoDkNJNoJ4lHHMDqAGYT7R7G1xDEEAIk0PborxwP8HEf910A8qIfvIhLgsG73fyDbzrLTtuQzQeBGVvOCLmfBTBKKT2UvvBA8PxMCMwEDEtKT+m/g7tqJc5ftbfi/f69QMTmfOUPALar1Vfuo9obzNgCWwCWvOSI5FpVUZrnh+tYuBeYscWmPtR1u3iUSpP5qvYFK2oJofQIjAmjcdVZdpwGKX4Yp3ErALw1nsV7gggJAEn0RQW4bS0OF3PxChA134j4XXui+VZ7/qmYB0INK8bumI/j4KJYJpNJVbTtZV+h3kQu4U+wuU3c2+BgPkJWSq2SmCl7vd92nTPum2cc2DSqX8Fur/fM5VNyqVgHm9yvx6rR1WPhJrB0uTAW4SbLTVlubacxcB2sQ12h4uzjIbgK7ppz+OIYDJBuRHZPUwWLtrpfHhkwmN1/pli01fgU+xVYN0/Xze6r0gk2XYGWzv6k9LhRy12nR/OfLQkGFC8upow2LSbVE1KtRWK5DeYE242F5e0WNxe/ntNiAyQZuq1C+rhXQnvU2s/ZCu6fr1Bpe2WYbinX48AK1lQ4jaKeuTovCMwVxHE1q6q49HlL8U3Iua7H/mBy+TwMfMa+DPwD3gEpLmPMTqMAAAAASUVORK5CYII="/>
+                    </div>
+                    <p class="content">Lorem ipsum, dolor sit amet <br>
+                        consectetur adipisicing elit.  Ipsum amet tenetur iure. Eos,  <br>
+                        veniam? Possimus, quaerat?  
+                        Natus perferendis eligendi en</p><br>
+                    <h1 id="name">YASIN ARFAT</h1>
+                    <br>
+                    <img src="{% static 'img/rev1.jpg' %}" alt="" class="img1">
+                 </h1>
+
+            </div>
+            <div class="flex2">
+                <h1>
+                   <div class="flex3">
+                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAedJREFUSEvFluF1wiAUhXmJezRuYgbQOoDkNJNoJ4lHHMDqAGYT7R7G1xDEEAIk0PborxwP8HEf910A8qIfvIhLgsG73fyDbzrLTtuQzQeBGVvOCLmfBTBKKT2UvvBA8PxMCMwEDEtKT+m/g7tqJc5ftbfi/f69QMTmfOUPALar1Vfuo9obzNgCWwCWvOSI5FpVUZrnh+tYuBeYscWmPtR1u3iUSpP5qvYFK2oJofQIjAmjcdVZdpwGKX4Yp3ErALw1nsV7gggJAEn0RQW4bS0OF3PxChA134j4XXui+VZ7/qmYB0INK8bumI/j4KJYJpNJVbTtZV+h3kQu4U+wuU3c2+BgPkJWSq2SmCl7vd92nTPum2cc2DSqX8Fur/fM5VNyqVgHm9yvx6rR1WPhJrB0uTAW4SbLTVlubacxcB2sQ12h4uzjIbgK7ppz+OIYDJBuRHZPUwWLtrpfHhkwmN1/pli01fgU+xVYN0/Xze6r0gk2XYGWzv6k9LhRy12nR/OfLQkGFC8upow2LSbVE1KtRWK5DeYE242F5e0WNxe/ntNiAyQZuq1C+rhXQnvU2s/ZCu6fr1Bpe2WYbinX48AK1lQ4jaKeuTovCMwVxHE1q6q49HlL8U3Iua7H/mBy+TwMfMa+DPwD3gEpLmPMTqMAAAAASUVORK5CYII="/>
+                   </div>
+                   <p class="content">Lorem ipsum, dolor sit amet <br>
+                       consectetur adipisicing elit.  Ipsum amet tenetur iure. Eos,  <br>
+                       veniam? Possimus, quaerat?  
+                       Natus perferendis eligendi en</p><br>
+                   <h1 id="name">TUM TUM</h1>
+                   <br>
+                   <img src="{% static 'img/rev2.jpg' %}" alt="" class="img1">
+                </h1>
+
+           </div>
+           <div class="flex2">
+            <h1>
+               <div class="flex3">
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvFlu1xgzAMhi3IHiWbwAChGSBwZZK2k5CLM0CaDBA2Kd0DR8VQwpc/sCmHf3EH+NFrvZIFZKUFK3GJNfh02r3xoOP4drQJ3gpM6d4n5HGvgU4QRZfMFG4J3t0JAb+GYRZFt2BxcF9tgzNXbaz4fH5NEbHKb7MA4Hg4fCUmqo3BlIY4BCCSnDEnSJJLPhVuBKY0/CiT+i7a3FS1KXiktgmCq47j69ZK8Z9xKrcCwEvlWXx4iOABEE+3KYfX/2IO4FTPiPhTeqJ67tb8UzFvCCUs1W0+733r/idYXCbzMMO/i8LZNgbs5Vhlnvkh9Gt9ZK5ljnzcYISu/i84NxuAk4h6ubSc5sJ1TUVZx/Zw/cWhbSCiFqkz2pQutojiKV1sEfCUAUEJFl2BumPuvP+Moiu/VIRLozj8ntKjxVurDaYEy42FWVG41cW/2bC0HYPaEHR5tqnj0RHKW618JJKCx/mtVcqmjDTde0P1qrKSgintTpJEaZRujrvqrcBcgesynzE3M5mleBDNv6phX9u5DMrH6NPVwL/k9NofSIolsAAAAABJRU5ErkJggg=="/>
+                   
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAedJREFUSEvFluF1wiAUhXmJezRuYgbQOoDkNJNoJ4lHHMDqAGYT7R7G1xDEEAIk0PborxwP8HEf910A8qIfvIhLgsG73fyDbzrLTtuQzQeBGVvOCLmfBTBKKT2UvvBA8PxMCMwEDEtKT+m/g7tqJc5ftbfi/f69QMTmfOUPALar1Vfuo9obzNgCWwCWvOSI5FpVUZrnh+tYuBeYscWmPtR1u3iUSpP5qvYFK2oJofQIjAmjcdVZdpwGKX4Yp3ErALw1nsV7gggJAEn0RQW4bS0OF3PxChA134j4XXui+VZ7/qmYB0INK8bumI/j4KJYJpNJVbTtZV+h3kQu4U+wuU3c2+BgPkJWSq2SmCl7vd92nTPum2cc2DSqX8Fur/fM5VNyqVgHm9yvx6rR1WPhJrB0uTAW4SbLTVlubacxcB2sQ12h4uzjIbgK7ppz+OIYDJBuRHZPUwWLtrpfHhkwmN1/pli01fgU+xVYN0/Xze6r0gk2XYGWzv6k9LhRy12nR/OfLQkGFC8upow2LSbVE1KtRWK5DeYE242F5e0WNxe/ntNiAyQZuq1C+rhXQnvU2s/ZCu6fr1Bpe2WYbinX48AK1lQ4jaKeuTovCMwVxHE1q6q49HlL8U3Iua7H/mBy+TwMfMa+DPwD3gEpLmPMTqMAAAAASUVORK5CYII="/>
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAgtJREFUSEvFlmFygjAQhbPgPYonqR5A2wMIU05iexJUPIDVA8hNtPcAtmzSSAIkkMx05I+OAl/e5u3bAHvSBU/iMm/w4bD6oEUnyWXns3gvcJ6/LxirrwIYLOP4VLjCPcGrK2OwEDAs4viy/Hewrlbi3FU7Kz4e3zJE5PsrLwDYbTbfqYtqZ3Cer5EABEOsIyo5IrtXVbBM09N9KtwJnOfrz2ZTt9JU4lOYzFW1K5irVQ2V58JopDpJznMvxX/G4W4FgBeOwDpChAiARe1LWzOpZiO4eBbvAAH/jog/jSf4d7XnH4opEBpYNrbirrIse49msypr28v8hmYRqYQ/wN02Ma0+js+0z9pF8DCsFkEQvMoqiRtkr8vb20ppe6yah8AAQeqTSoTpV1Dv9Z651Ad84br7aRn9gBl0dR/O9kMlHtpN6XJRcnPVjO3ko7wLtYWKtY/1fRofBjLVpgyO0QBRI9KWx6Kt6tvUFJusWO1BU6e6pNhkcFkGczkEqOcRax42ast1s9zWilawOgLj+Mzv7bcK1/9FrlfLLX8zVWdE8fpGGS1GIOxJpZ7Z7Wtl6zBWbUVi2c1oBasu1eMPi7IM+eDv5rRYAIvGptWkPu6Ui5dV/c1QfutB0AjuH3GEStMpY2hK2Q4HRrCaQmNGMan3AstRV1Vh4XKWokXIZ22H/dHkGjsY+P7/NPAvGf1lLs1Ku+cAAAAASUVORK5CYII="/>
+               </div>
+               <p class="content">Lorem ipsum, dolor sit amet <br>
+                   consectetur adipisicing elit.  Ipsum amet tenetur iure. Eos,  <br>
+                   veniam? Possimus, quaerat?  
+                   Natus perferendis eligendi en</p><br>
+               <h1 id="name">SUJATHA..</h1>
+               <br>
+               <img src="{% static 'img/rev3.jpg' %}" alt="" class="img1">
+            </h1>
+            </div>
+            
+    
+
+        </div>
+        <div class="flex4">
+            <ul class="flex5">
+                <li class="topic">
+                    <h3 class="title">COFFEE SHOP</h3>
+                    <p>Lorem ipsum, dolor  amet <br> consectetur adipisicing.<br> Quas eveniet illo  quia,<br>  dolore commodi.</p>
+                </li>
+                <li class="topic">
+                    <h3 class="title">SUPPORT</h3>
+                    <p>
+                        product <br>
+                        Help & support <br>
+                        Return Policy <br>
+                        Turn of use <br>
+                        products
+                    </p>
+                </li>
+                <li class="topic">
+                    <h3 class="title">VIEW GUIDES</h3>
+                    <p>
+                        Features <br>
+                        Careers <br>
+                        Blog posts <br>
+                        Our branches<br>
+                        
+                    </p>
+                </li>
+                <li class="topic">
+                    <h3 class="title">CONTACTS</h3>
+                    <p>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfdJREFUSEvFVsFxAyEMxGXw83USV5K4ksSVxK7E7gT/VEbivUHMHidAdx8z47kZDCxarVYcwpvG4U24YRewSDqGEL5evyd+MU6PrQG4gUXSRwjhO4SAbz1wAYxbjNOP5xJDYIoOoJ5x8YB3gTNoIjREdntF/QC9+X8wAOo/8xfLse7cS8EI+E7UAuzUCtlgBrmfWuubwCIJuVJ6F/T1xNXbx5foAf/lhSXSDPhrCAzUnmKcntWaJuUmsEhCqQAAAwfO5SKSmPqVspXaShvI9bVe3AIGKMBDjNO8RiSVuZeIcNAlH4Z0zGsxp4oWSRAlRGeqvAWsm64xTucMrHPlMnkeh4MJfDktyo4pyhaw5pcj0LlyGaWP2ChKJpGZ6t4SsUawOoho5Yg1NZuAVzRVgkOOYSRQLefYSs0mqrWGmTrOpeULi8hEUjM12NyiGjaIqDFKOXTqeBFVqxy9BtLLKaJXj559mw+lnC8qwAvMJuLqOLm8eJ9pHk2qqT7VHofdhvZoN+s2lVF34lx3u41hqcVqLSV6HgLcpVbmQSbCPj5MjQcYQuKOZDmXu2/rRYfARr4xxUaxGbQrrjovuYa1GeDv+YVJvXmoAVc5WYLwGoi1t55zUV2Zg76p9VnULZvWJTYDk4phFEfPU3ZXOXlo27Nmd8R7wHjPP3CCMy5YFteVAAAAAElFTkSuQmCC"/ width="15px">   250 Newyork City,USA 1001
+                         <p>
+                        
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAYRJREFUSEvtlr11gzAUha9okopMQCdV2AOYCTyBM0GmygTxBEyQDECopI4NqBwXfjkKMX+SEBid4yKhoQDp47137xUMd7rYnbj4B7edl7JMGaMMoJLz7XvokVhbrVS5B5B2sMtHaLgBlrI8MIbErDAsfABWqkiA6OBuazj4QjDVoWY+AEspY8bOL9NC+oHnnG+rNYK7AQwQIRciLYOB9UZucTUYIlRCpMc1UL3WULVppQ4RCuoA25UdEmoFuwV2Oa4VVH88juQqMiDajeZYcp7ma2d7XW8F26v220ipIiN6/BRC1L4PdB6LzSEBndm9i2rON6+2TTs3zAuZCbCMgfPezG2qiR7e+lWZFvTDJ38EmpZ/PQMsHleuoxNARRTt7IeKXuHOdu8fyLwYnZqoHe4FN2nmqtwnofa54YhZ4A5+2lhsNoNuinI2+Lq7tsxSuO1QWQweVs9SU3hGA6zBcxO4v/Wv3xMixGN1T+X7avDwI7T3AcZOT/o+le1BwTNU1r7y98DfNfHAH5zj0roAAAAASUVORK5CYII="/ width="15"> +91 9875463021 <br>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZRJREFUSEvtlrGRgzAQRVcEjCM6cCZF2AWcK3AF18iV4w6ogArsAnxEKHMFJrpxwN7IGoEsBFqdzZGYEKR9+l9/JRgs9LCFuPAG/5vzXqvrus4Yu+0AIH/FShDhAgCVEHll6nnBUp53AMnHK6B2DcT0IIRo1LsRcPXVT8AGALuVxi0myWzXEKE0qglghWpPiKtvs1oKXMrzGiD5fBzbnjjfHomK9VS9T2lJgY9vFR1cIULGGKzNym27XOUqlAC3vT0eoC165WSwHqgVsByAqT3zWj+09p6NkvPtRUqTmUiwQunCbG/gtvWuteqbEHlhHCGD67oyoXjoPZ+VCuJaq1Ta20AGh1I7tP4ev85ad/4kmHZotIVRY1vvWjsr2BRX9odaLKRYtUzXNj67Yw+R6HBpG/0P4uoaUhhltT+FPnjfi6EQ/kGxfUm45WcF06y2+n1SfN/ngZPLrqJ/Cn429jvE5Kqutz6tFNOx4XxzMCODP3u+6830bYTiBjE92qF8CkzROTYmCH6m+NTcN3guZwd1F7P6F7TSLC5OAcoZAAAAAElFTkSuQmCC"/ width="15px"> coffee@shop.com
+                         </p> 
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE SHOP</title>
+    <style>
+        /* CSS PROPERTIES OF ABOUT US */
+
+body{
+    background-image: url("{% static 'img/bg.png' %}");
+}
+#home{
+    border: 2px solid rgb(240, 231, 213);
+    background-color: rgb(55, 58, 54);
+    
+    border-radius: 10px;
+}
+#img5{
+    width: 500px;
+    border-radius: 20px;
+
+
+ }
+ #title{
+    color: lightgrey;
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace ;
+ }
+#content{
+    color: rgba(216, 194, 194, 0.897);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+ #flex1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 200px;
+ }
+ #learn{
+    background-color: rgb(20, 18, 3);
+    border: 2px solid rgb(51, 51, 49);
+    border-radius: 10px;
+    font-family:cursive;
+    font-weight: 500;
+    color:rgb(134, 212, 33);
+    padding: 7px;
+    text-decoration: none;
+
+ }
+#learn:hover{
+    color: aliceblue;
+    background-color: chocolate;
+    filter:blur(1px)
+}
+    </style>    
+</head>
+<body>
+    <a href="{% url 'home' %}" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWxJREFUSEvt1t1NwzAQB/A7OewRBiCIDdJ3bNQJaCehTFKYoCLpe7tBRRiADhLpkJU4OI7z4aMoL81jm/Z3ts9/G2GmB2dygQ3vTrtYCJGqRL1ximfBWbHfAtBKg0Tw+nQvN6F4MGyjBuPgQXAbxXMFU8wZ+WTYRRFpXZblWYibAwefBPtQeSePeqRVk4Xjo/AQataYgw/CU1Au3guHoBzcC3PQULwD/wUNwVuwGw6cYDD4x2e+QYSXvpBp4KzIVgC4taPvknAdNmuT7Q2cf+UpERz+E0aEhdn/ranW+zGKotgU4I64npVn/4FA7/ZJZU+1BnXKLR+WdcyC/1jMipzc/PUthVuAXagNq0R2mrhnO/ng/XeVyfpwoKbyCsfYfKeSx1v9yQXhbjG+Djaju8JuPwSs8XWqfyfP10jc5tIJlobeHHveP6pELiaucTe3uUXYMWn/R+9FwFzYiXQ48J6h+/bonYtHjv9qNvgHyR2LLlJhOJMAAAAASUVORK5CYII="/ id="home">
+    </a>
+    <div id="flex1">
+        <img src="{% static 'img/about.jpg' %}" alt="" id="img5">
+        <p id="content">
+            <span id="title">OUR HISTORY</span><br><br>
+            <br>
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+             Est laborum vel dolorem quae veniam ex, cumque aspernatur eveniet ullam beatae
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae consequatur <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, iste! <br><br> <br>
+            <a href="" id="learn">Learn more</a>
+
+        </p>
+    </div>
+</body>
+</html>
